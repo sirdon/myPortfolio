@@ -1,7 +1,6 @@
-import React from 'react';
-import { Box, Typography, Avatar, Grid, useTheme } from '@mui/material';
+import { Box, Typography, Avatar, useTheme } from '@mui/material';
 import { personalData } from '../data';
-
+const image = require('../images/profile.jpeg'); // Adjust the path as necessary
 const About = () => {
   const theme = useTheme();
 
@@ -27,7 +26,6 @@ const About = () => {
         }}>
           About Me
         </Typography>
-        
         <Box sx={{
           display: 'flex',
           flexDirection: { xs: 'column', md: 'row' },
@@ -42,7 +40,7 @@ const About = () => {
             minWidth: 300
           }}>
             <Avatar
-              src={personalData.profile}
+              src={image}
               alt={personalData.name}
               sx={{ 
                 width: 280, 

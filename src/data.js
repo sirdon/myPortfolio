@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Amit Kumar",
-  profile: 'profile.jpeg', // Make sure to add a profile image in src/assets/images
+  profile: './../images/profile.jpeg', // Make sure to add a profile image in src/assets/images
   designation: "Full Stack Developer",
   description: "I'm Amit Kumar, a passionate Full Stack Developer with 5+ years of experience in building web applications using JavaScript, React, Node.js, and various other technologies. My journey in web development is driven by my curiosity and passion for creating efficient, scalable, and user-friendly applications.",
   email: 'inform2theamit@gmail.com',

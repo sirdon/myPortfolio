@@ -1,4 +1,4 @@
-import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Header from './components/Header';
@@ -33,6 +33,7 @@ const theme = createTheme({
 
 function App() {
   return (
+    <BrowserRouter basename="/myPortfolio">
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="portfolio-container">
@@ -50,6 +51,7 @@ function App() {
         <Footer />
       </div>
     </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
